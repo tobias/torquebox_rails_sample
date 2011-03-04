@@ -1,0 +1,8 @@
+jobs:
+  samplejob:
+    description: a sample job
+    job: SampleJob
+    cron: "0/10 * * * * ?"
+
+services:
+  SampleService:

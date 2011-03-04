@@ -1,0 +1,23 @@
+<h1>Listing tps_reports</h1>
+
+<table>
+  <tr>
+    <th>Report</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tps_reports.each do |tps_report| %>
+  <tr>
+    <td><%= tps_report.report %></td>
+    <td><%= link_to 'Show', tps_report %></td>
+    <td><%= link_to 'Edit', edit_tps_report_path(tps_report) %></td>
+    <td><%= link_to 'Destroy', tps_report, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tps report', new_tps_report_path %>

@@ -1,0 +1,9 @@
+== TorqueBox Rails Sample
+
+A rails 3 app showing some of the features of TorqueBox. See:
+
+* config/torquebox.yml
+* app/services/sample_service.rb
+* app/tasks/sample_task.rb
+* app/models/tps_report.rb
+
