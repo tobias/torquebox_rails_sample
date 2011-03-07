@@ -8,6 +8,8 @@ class TpsReport < ActiveRecord::Base
   end
 
   def shred_report
+    puts "### TPSREPORT: Loading shredder..."
+    sleep(5)
     puts "### TPSREPORT: Shredding '#{report}'"
   end
 end

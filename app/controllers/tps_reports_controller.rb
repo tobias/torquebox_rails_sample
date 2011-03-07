@@ -3,8 +3,10 @@ class TpsReportsController < ApplicationController
   # GET /tps_reports.xml
   def index
     @tps_reports = TpsReport.all
-    SampleTask.async(:do_something, :sleep_for => 2.seconds)
-    
+    SampleTask.async(:do_something, :sleep_for => 2)
+
+    # @tps_reports.first.shred_report
+    # @tps_reports.first.background.shred_report
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @tps_reports }
