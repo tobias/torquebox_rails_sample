@@ -1,5 +1,9 @@
 <h1>Listing tps_reports</h1>
 
+<% if @start_time %>
+Pre shred: <%= @start_time %><br/>
+Post shred: <%= @end_time %>
+<% end %>
 <table>
   <tr>
     <th>Report</th>

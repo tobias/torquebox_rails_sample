@@ -5,8 +5,10 @@ class TpsReportsController < ApplicationController
     @tps_reports = TpsReport.all
     SampleTask.async(:do_something, :sleep_for => 2)
 
-    # @tps_reports.first.shred_report
-    # @tps_reports.first.background.shred_report
+    #@start_time = Time.now
+    #@tps_reports.first.shred_report
+    #@tps_reports.first.background.shred_report
+    #@end_time = Time.now
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @tps_reports }
